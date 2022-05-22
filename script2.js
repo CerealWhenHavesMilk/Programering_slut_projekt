@@ -127,7 +127,6 @@ function updateGameArea() {
         notMyGamePiece.update();
         notMyGamePiece2.update();
         myGamePiece.visualrotator();
-        console.log(notMyGamePiece2.x + " " + myGamePiece.x)
         if ( notMyGamePiece2.x - 40  <  myGamePiece.x && myGamePiece.x < notMyGamePiece2.x + 40 && notMyGamePiece2.y -40 < myGamePiece.y && myGamePiece.y < notMyGamePiece2.y + 40){
             document.getElementById("gameOver").style.display ="flex";
             document.getElementById("finalscore").style.display = "flex";
@@ -139,8 +138,6 @@ function updateGameArea() {
 
 
         }
-        else
-            console.log("fuckyou")
         if ( notMyGamePiece.x - 40 <  myGamePiece.x && myGamePiece.x < notMyGamePiece.x + 40  &&  myGamePiece.y  > notMyGamePiece.y - 40 && myGamePiece.y < notMyGamePiece.y + 40 ){
             document.getElementById("gameOver").style.display = "flex";
             document.getElementById("finalscore").style.display = "flex";
